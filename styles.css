@@ -385,3 +385,35 @@ input:focus, textarea:focus{
   .nav.open{ display:flex; }
   .menu-btn{ display:inline-flex; }
 }
+
+/* ---------- Inline form layout (optional) ---------- */
+.form-group{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.form-group label{
+  margin: 0;              /* override your form label margins */
+}
+
+.form-group textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Make the message row align nicely */
+.form-group.message{
+  align-items: start;
+}
+
+/* On small screens, stack label above input */
+@media (max-width: 640px){
+  .form-group{
+    grid-template-columns: 1fr;
+  }
+}
+
+
