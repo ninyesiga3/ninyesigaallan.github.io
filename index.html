@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -42,6 +43,7 @@
   </header>
 
   <main id="main">
+
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
@@ -57,7 +59,6 @@
           <div class="hero-actions">
             <a class="btn" href="#projects">View Projects</a>
             <a class="btn btn-ghost" href="#contact">Get in touch</a>
-            <!-- OPTIONAL: Put your CV PDF in the same folder and name it cv.pdf -->
             <a class="btn btn-light" href="cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
           </div>
 
@@ -167,9 +168,7 @@
             <h3>Software & Systems</h3>
             <ul class="list">
               <li>Web apps</li>
-              
               <li>Mobile Apps</li>
-            
             </ul>
           </div>
 
@@ -205,12 +204,9 @@
         </div>
 
         <div class="project-grid" id="projectGrid">
-          <!-- Project Card -->
           <article class="card project" data-tags="ai,data">
             <h3>Pothole Detection (CNN)</h3>
-            <p class="muted">
-              A computer vision model to detect potholes from road images, designed for a Ugandan context.
-            </p>
+            <p class="muted">A computer vision model to detect potholes from road images, designed for a Ugandan context.</p>
             <div class="badges">
               <span class="badge">AI</span><span class="badge">Computer Vision</span><span class="badge">Python</span>
             </div>
@@ -222,9 +218,7 @@
 
           <article class="card project" data-tags="data,edtech">
             <h3>Practicum: Data Science Notebooks</h3>
-            <p class="muted">
-              Hands-on Jupyter notebooks for undergraduate data science: cleaning, visualization, and basic ML.
-            </p>
+            <p class="muted">Hands-on Jupyter notebooks for undergraduate data science: cleaning, visualization, and basic ML.</p>
             <div class="badges">
               <span class="badge">Data</span><span class="badge">Jupyter</span><span class="badge">Teaching</span>
             </div>
@@ -235,9 +229,7 @@
 
           <article class="card project" data-tags="security,edtech">
             <h3>Cybersecurity Awareness Chatbot</h3>
-            <p class="muted">
-              A chatbot that helps users learn safe digital practices through guided Q&A and scenarios.
-            </p>
+            <p class="muted">A chatbot that helps users learn safe digital practices through guided Q&A and scenarios.</p>
             <div class="badges">
               <span class="badge">Security</span><span class="badge">Awareness</span><span class="badge">AI</span>
             </div>
@@ -249,9 +241,7 @@
 
           <article class="card project" data-tags="data,ai">
             <h3>Poverty Mapping Mobile App (Flutter)</h3>
-            <p class="muted">
-              A mobile-based framework for tracking and geographic mapping of poverty-stricken households in Uganda.
-            </p>
+            <p class="muted">A mobile-based framework for tracking and geographic mapping of poverty-stricken households in Uganda.</p>
             <div class="badges">
               <span class="badge">Data</span><span class="badge">Mobile</span><span class="badge">GIS</span>
             </div>
@@ -262,9 +252,7 @@
 
           <article class="card project" data-tags="edtech,data">
             <h3>University Timetabling Support</h3>
-            <p class="muted">
-              Improving timetable workflows and constraints handling for large universities.
-            </p>
+            <p class="muted">Improving timetable workflows and constraints handling for large universities.</p>
             <div class="badges">
               <span class="badge">EdTech</span><span class="badge">Operations</span><span class="badge">Optimization</span>
             </div>
@@ -275,9 +263,7 @@
 
           <article class="card project" data-tags="ai,data">
             <h3>Coffee Leaf Rust Detection</h3>
-            <p class="muted">
-              Deep learning approach to detect coffee leaf rust, with focus on Uganda and East Africa.
-            </p>
+            <p class="muted">Deep learning approach to detect coffee leaf rust, with focus on Uganda and East Africa.</p>
             <div class="badges">
               <span class="badge">AI</span><span class="badge">Agritech</span><span class="badge">CNN</span>
             </div>
@@ -297,40 +283,46 @@
           <p class="muted">Courses and learning materials.</p>
         </div>
 
+        <!-- Teaching cards -->
         <div class="cards-3">
           <div class="card">
             <h3>Principles of Programming (Python)</h3>
             <p class="muted">Foundations: problem solving, control flow, functions, data structures.</p>
             <a class="link" href="#">Course Outline</a>
           </div>
+
           <div class="card">
             <h3>Practicum: Data Science</h3>
             <p class="muted">Hands-on data lifecycle: collect, clean, analyze, visualize, model.</p>
             <a class="link" href="#">Notebooks</a>
           </div>
-           <div class="card">
+
+          <div class="card">
             <h3>Artificial Intelligence</h3>
-            <p class="muted">Beginner AI,Intermediate AI,Advanced AI,.</p>
+            <p class="muted">Beginner AI, Intermediate AI, Advanced AI.</p>
             <a class="link" href="#">Lecture Notes</a>
           </div>
+
           <div class="card">
             <h3>Emerging Trends in Computing</h3>
             <p class="muted">AI, cloud/edge, IoT, cybersecurity, blockchain, ethics.</p>
             <a class="link" href="#">Lecture Notes</a>
           </div>
-          <section id="lessons">
-  <h2>Upcoming Live Class</h2>
-  <div class="lesson-card">
-    <h3>CSC 1207 – Principles of Programming</h3>
-    <p>Date: Monday 7:00 PM</p>
-    <p>Platform: Zoom</p>
-    <a href="YOUR_ZOOM_LINK" target="_blank" class="join-btn">
-      Join Live Session
-    </a>
-  </div>
-</section>
-
         </div>
+
+        <!-- Lessons (kept separate from cards grid) -->
+        <div class="section-head" style="margin-top: 24px;">
+          <h3>Live Lessons</h3>
+          <p class="muted">Join scheduled online classes via Zoom.</p>
+        </div>
+
+        <div class="card lesson-card">
+          <h3>CSC 1207 – Principles of Programming</h3>
+          <p class="muted">Date: Monday 7:00 PM</p>
+          <p class="muted">Platform: Zoom</p>
+          <a href="YOUR_ZOOM_LINK" target="_blank" rel="noreferrer" class="btn btn-small">Join Live Session</a>
+        </div>
+
       </div>
     </section>
 
@@ -346,7 +338,7 @@
           <div class="tl-item">
             <div class="tl-dot"></div>
             <div class="tl-content card">
-              <h3>Lecturer, Computer Science and Computer Security </h3>
+              <h3>Lecturer, Computer Science and Computer Security</h3>
               <p class="muted small">Teaching • Supervision • Department support</p>
               <ul class="list">
                 <li>Teach AI, Data Science, Cyber Security, Programming</li>
@@ -360,12 +352,12 @@
             <div class="tl-dot"></div>
             <div class="tl-content card">
               <h3>Information & Cyber Security Consultant</h3>
-              <p class="muted small">•	Threat & Vulnerability Management •	Network Traffic Monitoring • Reporting  •	Firewall, IDS/IPS Log Analysis</p>
+              <p class="muted small">Threat & Vulnerability Management • Network Traffic Monitoring • Reporting • Firewall, IDS/IPS Log Analysis</p>
               <ul class="list">
                 <li>Monitor security alerts and logs from firewalls, IDS/IPS, and endpoint systems.</li>
                 <li>Conduct vulnerability scans and track remediation actions</li>
-                 <li>Investigate suspicious activities and document incident findings.</li>
-                 <li>Provide security monitoring support for enterprise and banking clients</li>
+                <li>Investigate suspicious activities and document incident findings.</li>
+                <li>Provide security monitoring support for enterprise and banking clients</li>
               </ul>
             </div>
           </div>
@@ -399,28 +391,35 @@
 
           <div class="card">
             <h3>Message</h3>
-            <!-- Formspree: replace YOUR_FORM_ID with your Formspree id -->
-            <!-- modify this form HTML and place wherever you want your form -->
-       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name" required>
-  </div>
+            <!-- Formspree: replace YOUR_FORM_ID with your real id -->
+            <form action="https://formspree.io/f/xaqdbren" method="POST">
+              <!-- Optional: email subject -->
+              <input type="hidden" name="_subject" value="New message from allan-ninyesiga website">
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com" required>
-  </div>
+              <!-- Optional: redirect after submit (create thank-you.html or remove this line) -->
+              <!-- <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html"> -->
 
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
-  </div>
+              <!-- Honeypot (anti-spam): keep hidden with CSS -->
+              <input type="text" name="_gotcha" style="display:none">
 
-  <button type="submit">Send</button>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
 
-</form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send</button>
+            </form>
 
           </div>
         </div>
@@ -428,24 +427,16 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container footer-inner">
         <p class="muted small">© <span id="year"></span> Allan Ninyesiga. All rights reserved.</p>
         <a class="link small" href="#">Back to top</a>
       </div>
     </footer>
+
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
